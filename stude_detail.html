@@ -1,1 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+</head>
+<body>
+    <h1>Welcome, {{ student.user.username }}</h1>
+    <p>Previous Qualifications: {{ student.previous_qualifications }}</p>
+    <p>Academic Issues: {{ student.academic_issues }}</p>
+    <p>Course: {{ student.course }}</p>
+    <!-- Add other student details as needed -->
+    <a href="{% url 'edit_student' %}">Edit</a>
+</body>
+</html>
 
